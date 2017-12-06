@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bridgelabz.cropper.viewImage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/backToMain"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:contentDescription="TODO"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/storeImage"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/style_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linealayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="@android:color/black">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_filter"/>
+
+                <TextView
+                    android:layout_below="@id/imageFilter"
+                    android:text="Filter"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageAdjust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_adjust"/>
+
+                <TextView
+                    android:layout_below="@id/imageAdjust"
+                    android:text="Adjust"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageFlip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_flip"/>
+
+                <TextView
+                    android:layout_below="@+id/imageFlip"
+                    android:text="Flip"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_crop"/>
+
+                <TextView
+                    android:layout_below="@+id/imageCrop"
+                    android:text="Crop"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/imageRotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_rotate"/>
+
+                <TextView
+                    android:layout_below="@+id/imageRotate"
+                    android:text="Rotate"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/linealayout"
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/horizontalFlip"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:text="Horizontal Flip"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/verticalFlip"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:text="Vertical Flip"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_button"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_below="@+id/relativeLayout"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:contentDescription="TODO"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

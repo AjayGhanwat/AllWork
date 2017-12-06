@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addNote"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="Add"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/layoutManager"
+        android:icon="@drawable/ic_view_headline_black_24dp"
+        android:title="CardLayout"
+        app:showAsAction="always"/>
+</menu>

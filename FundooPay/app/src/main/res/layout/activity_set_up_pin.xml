@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/setUpNewUserPin"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             android:clickable="true"
+             android:focusable="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:fontFamily="@font/avenir"
+            android:text="@string/set_4_digit_upi_pin"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/firstNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:targetApi="lollipop"/>
+
+            <EditText
+                android:id="@+id/secNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:targetApi="lollipop"/>
+
+            <EditText
+                android:id="@+id/thNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:targetApi="lollipop"/>
+
+            <EditText
+                android:id="@+id/fourNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:targetApi="lollipop"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/back_access"
+            android:fontFamily="@font/avenir"
+            android:text="@string/set"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+</FrameLayout>

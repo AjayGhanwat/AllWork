@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cardBack">#FB8C00</color>
+    <color name="cardGallery">#1ee179</color>
+    <color name="cardCamera">#29d4ff</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

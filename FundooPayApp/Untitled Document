@@ -1,0 +1,5 @@
+Quickest way to do that is File → Invalidate caches / Restart... → Just Restart.
+Right click on project and Synchronize ...Project
+click on Build menu --> select Clean Project and then Rebuild
+it.
+

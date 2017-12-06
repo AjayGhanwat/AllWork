@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allowAccess"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_access"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/avenir"
+        android:text="@string/allow_us_to_access"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:id="@+id/textView3"/>
+
+    <Switch
+        android:id="@+id/smsAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="36dp"
+        android:theme="@style/AppTheme"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/smsAccess"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/smsAccess"
+        android:layout_toRightOf="@+id/smsAccess"
+        android:fontFamily="@font/avenir"
+        android:text="@string/sms_nto_securly_verify_mobile_number"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+    <Switch
+        android:id="@+id/phoneState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/smsAccess"
+        android:layout_alignStart="@+id/smsAccess"
+        android:layout_below="@+id/smsAccess"
+        android:layout_marginTop="34dp"
+        android:theme="@style/AppTheme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_alignTop="@+id/phoneState"
+        android:fontFamily="@font/avenir"
+        android:text="@string/phone_state_nto_securly_verify_phone_with_upi"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/nextSelectSim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:fontFamily="@font/avenir"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

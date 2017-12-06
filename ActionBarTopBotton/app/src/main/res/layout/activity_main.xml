@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bridgelabz.util.actionbartopbotton.MainActivity">
+
+    <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/navigationBotton"
+        android:layout_gravity="bottom"
+        design:menu="@menu/bottom_menu">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="130dp"
+            android:layout_height="61dp"
+            android:hint="Take a note... "/>
+    </android.support.design.widget.BottomNavigationView>
+
+</android.support.design.widget.CoordinatorLayout>

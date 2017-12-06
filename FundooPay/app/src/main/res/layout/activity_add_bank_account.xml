@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/addBank"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             android:clickable="true"
+             android:focusable="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="UselessParent">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/bank"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/appCompatImageView"
+            android:layout_toRightOf="@+id/appCompatImageView"
+            android:fontFamily="@font/avenir"
+            android:text="@string/xxxxxxxx1234"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@+id/appCompatImageView"
+            android:layout_toRightOf="@+id/appCompatImageView"
+            android:fontFamily="@font/avenir"
+            android:text="@string/saving"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="74dp"
+            android:layout_toEndOf="@+id/appCompatImageView"
+            android:layout_toRightOf="@+id/appCompatImageView"
+            android:fontFamily="@font/avenir"
+            android:text="@string/ifsc_0000624"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/upi_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/setUpPin"
+            android:layout_alignStart="@+id/setUpPin"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/avenir"
+            android:text="@string/upi_pin"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appCompatImageView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/upi_pin"
+            android:layout_toRightOf="@+id/upi_pin"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/firstNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:password="true"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Deprecated"
+                tools:targetApi="lollipop"/>
+
+            <EditText
+                android:id="@+id/secNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:password="true"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Deprecated"
+                tools:targetApi="lollipop"/>
+
+            <EditText
+                android:id="@+id/thNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:password="true"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Deprecated"
+                tools:targetApi="lollipop"/>
+
+            <EditText
+                android:id="@+id/fourNum"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:password="true"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Deprecated"
+                tools:targetApi="lollipop"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/upi_pin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/ifYouDont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewDisplay"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/avenir"
+            android:text="@string/if_you_don_t_have_upi_pin"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/setUpPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifYouDont"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80sp"
+            android:layout_marginStart="80sp"
+            android:layout_marginTop="20dp"
+            android:background="@color/back_access"
+            android:fontFamily="@font/avenir"
+            android:gravity="center"
+            android:text="@string/set_upi_pin"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/resetUpiPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setUpPin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80sp"
+            android:layout_marginStart="80sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/avenir"
+            android:text="@string/reset_upi_pin"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/submitUserDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resetUpiPin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/avenir"
+            android:text="@string/submit"
+            android:textColor="@color/back_access"/>
+
+    </RelativeLayout>
+</FrameLayout>

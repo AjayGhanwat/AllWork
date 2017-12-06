@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Templates</string>
+    <string name="title">Title</string>
+    <string name="desciption">Desciption</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+</resources>

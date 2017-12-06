@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/apk/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.bridgelabz.util.myapplication.myapplication"
+              android:weightSum="1">
+
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="363dp"
+        android:layout_height="415dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:text="Date"/>
+</LinearLayout>

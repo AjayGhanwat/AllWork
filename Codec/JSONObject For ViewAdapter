@@ -1,0 +1,30 @@
+   GenericTypeIndicator<ArrayList<Data>> t = new GenericTypeIndicator<ArrayList<Data>>(){};
+
+              //  Data post = dataSnapshot.getValue(Data.class);
+                ArrayList<Data> Values = (ArrayList<Data>) dataSnapshot.getValue(t);
+                recyclerView.setAdapter(new ViewRecyclerAdapter(Values));
+
+
+
+JSONArray mArray;
+        try {
+            mArray = new JSONArray(list);
+            JSONObject mJsonObject = mArray.getJSONObject(position);
+
+            String title = mJsonObject.getString("Title");
+            String desc = mJsonObject.getString("Desc");
+            key = mJsonObject.getString("Key");
+            int color = mJsonObject.getInt("Color");
+
+            String hexColor = String.format("#%06X", (0xFFFFFF & color));
+
+            holder.user_Title.setText(title);
+            holder.user_desc.setText(desc);
+            holder.card.setCardBackgroundColor(Color.parseColor(hexColor));
+
+            Log.d("OutPut", mJsonObject.getString("NeededString"));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }

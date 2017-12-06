@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NavBarDrawer</string>
+    <string name="Open">NavBarDrawer</string>
+    <string name="Close">NavBarDrawer</string>
+</resources>

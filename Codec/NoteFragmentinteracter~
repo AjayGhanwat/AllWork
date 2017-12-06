@@ -1,0 +1,39 @@
+/*reference = FirebaseFirestore.getInstance().collection(user_data_FirebaseFirestore).document(userID).collection(user_note_FirebaseFirestore);
+
+                reference.orderBy(user_firestore_data_keys, Query.Direction.DESCENDING).get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                    @Override
+                    public void onSuccess(QuerySnapshot documentSnapshots) {
+
+                        if (documentSnapshots != null) {
+
+                            for (DocumentSnapshot postSnapshot : documentSnapshots.getDocuments()) {
+
+                                DataModel match = postSnapshot.toObject(DataModel.class);
+                                userNotes.add(match);
+
+                                boolean isPin = match.getPin();
+
+                                boolean isArchive = match.getArchive();
+
+                                if (!isArchive && !match.getTrash() && !isPin) {
+
+                                    unPinSize++;
+                                    data.add(match);
+                                    changeData.add(match);
+                                    changeDataAdapter = new NoteDataAdapter(changeData);
+                                    dataAdapter = new NoteDataAdapter(data);
+                                    unpinrecycler.setAdapter(dataAdapter);
+                                    unpinrecycler.invalidate();
+                                    dataAdapter.notifyDataSetChanged();
+                                    pinrecycler.invalidate();
+                                    if (pinDataAdapter != null) {
+                                        pinDataAdapter = new NoteDataAdapter(pinData);
+                                        pinrecycler.setAdapter(pinDataAdapter);
+                                        pinDataAdapter.notifyDataSetChanged();
+                                    }
+                                }
+                                NoteFragment.isChecked(pinSize, unPinSize);
+                            }
+                        }
+                    }
+                });*/

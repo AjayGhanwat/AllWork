@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CardView</string>
+    <string name="pref_key">KEy</string>
+</resources>

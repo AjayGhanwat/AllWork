@@ -1,0 +1,28 @@
+if(namef.equals("") && namel.equals("") && email.equals("") && phonel.equals("") && pass.equals("")){
+                    Toast.makeText(Register.this, "Enter Data!!", Toast.LENGTH_SHORT).show();
+                }
+                else if(mail.matches(emailPattern)){
+                    Toast.makeText(Register.this, "Enter Correct Email!!", Toast.LENGTH_SHORT).show();
+                }
+                else if(len != 10){
+                    Toast.makeText(Register.this, "Enter 10 number Phone!!", Toast.LENGTH_SHORT).show();
+                }
+                else if(pass.equals(cpass)) {
+                    mRefChild = mRef.child("First_Name");
+                    mRefChild.setValue(fname.getText().toString());
+
+                    mRefChild = mRef.child("Last_Name");
+                    mRefChild.setValue(lname.getText().toString());
+
+                    mRefChild = mRef.child("Email");
+                    mRefChild.setValue(email.getText().toString());
+
+                    mRefChild = mRef.child("Phone");
+                    mRefChild.setValue(phone.getText().toString());
+
+                    mRefChild = mRef.child("Password");
+                    mRefChild.setValue(pass1.getText().toString());
+                }
+                else{
+                    Toast.makeText(Register.this, "Enter Correct Password!!", Toast.LENGTH_SHORT).show();
+                }

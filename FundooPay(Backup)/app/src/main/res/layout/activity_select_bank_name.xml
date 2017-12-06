@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_bank"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/back_access"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/all_banks"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/back_access"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bankListRecycler"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        tools:listitem="@layout/bank_list_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

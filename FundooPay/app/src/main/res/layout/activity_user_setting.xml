@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:id="@+id/userSettingAcc"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/white"
+                 android:clickable="true"
+                 android:focusable="true">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_account_balance_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/avenir"
+                    android:padding="10dp"
+                    android:text="@string/bank_account"
+                    android:textColor="@color/back_access"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_edit_location_black_24dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/avenir"
+                    android:padding="10dp"
+                    android:text="@string/location"
+                    android:textColor="@color/back_access"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_phone_iphone_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/usersPhoneNumberEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/avenir"
+                    android:padding="10dp"
+                    android:text="@string/phone"
+                    android:textColor="@color/back_access"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phoneNumberOldNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/please_enter_your_country_code_and_old_phone_number"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/_91"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/old_phone_number"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/please_enter_your_country_code_and_newphone_number"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/_91"
+                        android:textSize="18sp"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/new_phone_number"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/usersProfileEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.7"
+                    android:fontFamily="@font/avenir"
+                    android:padding="10dp"
+                    android:text="@string/profile"
+                    android:textColor="@color/back_access"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profileUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:hint="@string/new_user_name"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:hint="@string/full_name_edit"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:hint="@string/address"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:hint="@string/landmark"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:hint="@string/pincode"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+
+            <Button
+                android:id="@+id/savewUpdates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/avenir"
+                android:text="@string/save"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>

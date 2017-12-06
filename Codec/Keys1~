@@ -1,0 +1,32 @@
+
+        if (previousDate != null) {
+            if (previousDate.equals(fDate)) {
+                if (NoteFragmentInteracter.Key != null) {
+                    String id = NoteFragmentInteracter.Key;
+
+                    int key = Integer.parseInt(id);
+                    key++;
+
+                    key1 = key + "";
+                } else {
+                    key1 = "0";
+                }
+            } else {
+
+                if (NoteFragmentInteracter.Key != null) {
+                    int key = -1;
+                    key++;
+
+                    key1 = key + "";
+
+                    previousDate = fDate;
+
+                } else {
+                    key1 = "0";
+                }
+            }
+        } else {
+            previousDate = fDate;
+            key1 = "0";
+        }
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pMarchandeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/avenir"
+                android:textSize="18sp"
+                android:textColor="@color/back_access"/>
+
+            <TextView
+                android:id="@+id/pMarchandeLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/avenir"
+                android:textSize="16sp"
+                android:textColor="@color/orange"/>
+
+            <TextView
+                android:id="@+id/pMarchandePhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/avenir"
+                android:textSize="14sp"
+                android:textColor="@color/back_access"/>
+
+            <TextView
+                android:id="@+id/pMarchandeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/avenir"
+                android:textSize="10sp"
+                android:textColor="@color/back_access"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:id="@+id/pUserBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/avenir"
+                    android:textSize="22sp"
+                    android:textColor="@color/orange"
+                    android:drawableLeft="@drawable/ic_indian_rupee"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/payBills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/back_access"
+                    android:fontFamily="@font/avenir"
+                    android:gravity="center"
+                    android:text="Pay"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

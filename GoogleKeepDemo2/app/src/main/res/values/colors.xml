@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffa200</color>
+    <color name="colorPrimaryDark">#ffbf00</color>
+    <color name="colorAccent">#ff8800</color>
+    <color name="colorHeader">#23b6e7</color>
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorTrash">#5E7C8B</color>
+    <color name="colorReminder">#00BBD5</color>
+    <color name="colorArchive">#7A5547</color>
+    <color name="colorBackGround">#d2d2d2</color>
+
+    <color name="cardBackGround">#EEEEEE</color>
+
+</resources>

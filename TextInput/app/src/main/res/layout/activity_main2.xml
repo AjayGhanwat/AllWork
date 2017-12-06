@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bridgelabz.textinput.Main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/mainEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/mainPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/userLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+
+
+</LinearLayout>

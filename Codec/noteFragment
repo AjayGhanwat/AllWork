@@ -1,0 +1,16 @@
+/*if (userData.getPin()) {
+
+                            pinDataRe.add(userData);
+                            pinDataAda = new NoteDataAdapter(pinDataRe);
+                            pinrecyclerView.setAdapter(pinDataAda);
+                            pinDataAda.notifyDataSetChanged();
+
+                        } else if (!userData.getPin() && !userData.getArchive() && !userData.getTrash()) {
+
+                            unpinDataRe.add(userData);
+                            unpinDataAda = new NoteDataAdapter(dataModels);
+                            recyclerView.setAdapter(unpinDataAda);
+                            unpinDataAda.notifyDataSetChanged();
+                            NoteFragmentInteracter.changeData.add(userData);
+
+                        }*/

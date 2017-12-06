@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:id="@+id/getData"
+            android:text="Display Data"/>
+
+        <EditText
+            android:id="@+id/changeType"
+            android:hint="Radius"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:maxLines="1"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.2">
+
+        <Button
+            android:id="@+id/nearByHospital"
+            android:text="Hospital"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:id="@+id/nearByRestaurants"
+            android:text="Restaurants"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:id="@+id/nearBySchool"
+            android:text="School"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.2">
+
+        <EditText
+            android:id="@+id/searchPlace"
+            android:hint="Location"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:maxLines="1"
+            android:inputType="textPostalAddress"/>
+        <Button
+            android:text="Search"
+            android:id="@+id/searchLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.2">
+
+        <Button
+            android:id="@+id/nearByPlaceHospital"
+            android:text="Hospital"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:id="@+id/nearByPlaceRestaurants"
+            android:text="Restaurants"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:id="@+id/nearByPlaceSchool"
+            android:text="School"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:map="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/map"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  tools:context="com.bridgelabz.googlemapdemo.MapsActivity"/>
+
+    </FrameLayout>
+
+</LinearLayout>

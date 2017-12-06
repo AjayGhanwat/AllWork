@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fundoo Pay</string>
+    <string name="fundoo">Fundoo</string>
+    <string name="pay">Pay</string>
+    <string name="easiest_way_to_manage_your_daily_expenses">Easiest way to manage your daily expenses</string>
+    <string name="next">Next</string>
+    <string name="username">Username</string>
+    <string name="full_name">Full name</string>
+    <string name="address">Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="allow_us_to_access">Allow us to access</string>
+    <string name="we_will_send_an_sms_from_your_phone_to_verify_if_your_phone_number_is_registered_with_your_bank_account">We will send an SMS from your phone to verify if your phone number is registered with your bank account.</string>
+    <string name="verify_mobile_number">Verify Mobile Number</string>
+    <string name="sim_1">Sim 1    </string>
+    <string name="sim_2">    Sim 2</string>
+    <string name="sms_nto_securly_verify_mobile_number">SMS  \nTo securly verify mobile number</string>
+    <string name="phone_state_nto_securly_verify_phone_with_upi">PHONE STATE  \nTo securly verify phone with UPI</string>
+    <string name="select_your_bank">Select Your Bank</string>
+    <string name="all_banks">All Banks</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/back_access"
+        android:theme="@style/MyOverflowButtonStyle"
+        tools:targetApi="lollipop">
+
+        <ImageButton
+            android:id="@+id/navigationicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/fundoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bauhaus_93"
+            android:text="@string/fundoo"
+            android:layout_marginLeft="-20dp"
+            android:textAppearance="@style/Bauhaus_93"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/pay"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bauhaus_93"
+            android:text="@string/pay"
+            android:textAppearance="@style/Bauhaus_93"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/addAccount"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir"
+            android:text="Add Account"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

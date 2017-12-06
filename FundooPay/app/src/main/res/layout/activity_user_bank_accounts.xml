@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/bankAccount"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             android:clickable="true"
+             android:focusable="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/bank"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/appCompatImageView"
+            android:layout_toRightOf="@+id/appCompatImageView"
+            android:fontFamily="@font/avenir"
+            android:text="@string/xxxxxxxx1234"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
+            android:layout_toEndOf="@+id/appCompatImageView"
+            android:layout_toRightOf="@+id/appCompatImageView"
+            android:fontFamily="@font/avenir"
+            android:text="@string/saving"
+            android:textColor="@color/back_access"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appCompatImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="74dp"
+            android:layout_toEndOf="@+id/appCompatImageView"
+            android:layout_toRightOf="@+id/appCompatImageView"
+            android:fontFamily="@font/avenir"
+            android:text="@string/_4_digit_upi_pin_exist"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/resetPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appCompatImageView"
+            android:layout_marginLeft="50sp"
+            android:layout_marginStart="50sp"
+            android:layout_marginTop="30sp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/avenir"
+            android:text="@string/reset_upi_pin"
+            android:textColor="@color/back_access"/>
+
+        <View
+            android:id="@+id/viewDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/resetPin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/ifYouDont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewDisplay"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/avenir"
+            android:text="@string/balance"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/resetUpiPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ifYouDont"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80sp"
+            android:layout_marginStart="80sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:fontFamily="@font/avenir"
+            android:text="@string/request_balance"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+</FrameLayout>
